@@ -17,13 +17,13 @@ Following will be required in this project:
 -Navigating to the provided folder
 -Installing pg packages, inquirer and postgradeSQL 
 
-#Usage
+# Usage
 'npm run start' can be used to run 'index.ts'
 
-#Credits
+# Credits
 Utilized Xpert Learning Assistant to resolve functionality issues
 
-#License
+# License
 This project is licensed under MIT.
 
-#Video
+# Video
