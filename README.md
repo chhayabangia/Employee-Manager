@@ -1,29 +1,29 @@
 # Employee-Manager
-# Description
+## Description
 Database which maintains an Organization's structure and helps in plan the business
 
 
-# Table of Contents
-#Installation
-#Usage
-#Credits
-#License
-#Video
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Video](#Video)
 
-# Installation
+## Installation
 Following will be required in this project:
 
 -Cloning of repository
 -Navigating to the provided folder
 -Installing pg packages, inquirer and postgradeSQL 
 
-# Usage
+## Usage
 'npm run start' can be used to run 'index.ts'
 
-# Credits
+## Credits
 Utilized Xpert Learning Assistant to resolve functionality issues
 
-# License
+## License
 This project is licensed under MIT.
 
-# Video
+## Video
