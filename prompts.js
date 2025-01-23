@@ -46,7 +46,7 @@ const mainMenu = async () => {
       break;
     case "Add a department":
       const response = await inquirer.prompt([
-        { type: "input", name: "dept_name", message: "Enter department name:" },
+        { type: "input", name: "dept_name", message: "Enter department name:" }
       ]);
       const dept_name = response.dept_name;  // Correcting this to use `dept_name`
       await addDepartment(dept_name);  // Pass the correct variable to the function

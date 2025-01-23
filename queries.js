@@ -27,7 +27,7 @@ export const getEmployees = async () => {
   return res.rows;
 };
 
-export const addDepartment = async (name) => {
+export const addDepartment = async (dept_name) => {
   await pool.query("INSERT INTO department (dept_name) VALUES ($1)", [dept_name]);
 };
 

@@ -10,6 +10,7 @@ CREATE DATABASE employee_tracker;
 DROP TABLE IF EXISTS department;
 DROP TABLE IF EXISTS role; 
 DROP TABLE IF EXISTS employee;
+
 CREATE TABLE department (
     id SERIAL PRIMARY KEY,
     dept_name VARCHAR(30) UNIQUE NOT NULL
