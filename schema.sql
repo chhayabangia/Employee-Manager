@@ -1,11 +1,15 @@
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'employee_tracker'
+  AND pid <> pg_backend_pid();
+
 DROP DATABASE IF EXISTS employee_tracker;
 CREATE DATABASE employee_tracker;
-DROP TABLE IF EXISTS department;
-DROP TABLE IF EXISTS role;
-DROP TABLE IF EXISTS employee;
-
 \c employee_tracker;
 
+DROP TABLE IF EXISTS department;
+DROP TABLE IF EXISTS role; 
+DROP TABLE IF EXISTS employee;
 CREATE TABLE department (
     id SERIAL PRIMARY KEY,
     dept_name VARCHAR(30) UNIQUE NOT NULL
