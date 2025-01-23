@@ -46,7 +46,6 @@ export const updateEmployeeRole = async (employee_id, role_id) => {
   await pool.query("UPDATE employee SET role_id = $1 WHERE id = $2", [role_id, employee_id]);
 };
 
-// Additional queries for bonus features
 export const updateEmployeeManager = async (employee_id, manager_id) => {
   await pool.query("UPDATE employee SET manager_id = $1 WHERE id = $2", [manager_id, employee_id]);
 };
