@@ -82,6 +82,27 @@ const mainMenu = async () => {
       await updateEmployeeRole(employee_id, new_role_id);
       console.log("Employee role updated!");
       break;
+    case "Update an employee manager":
+      const updateManagerResponse = await inquirer.prompt([
+        { type: "input", name: "employee_id", message: "Enter employee ID:" },
+        { type: "input", name: "manager_id", message: "Enter new manager ID:" },
+      ]);
+      await updateEmployeeManager(updateManagerResponse.employee_id, updateManagerResponse.manager_id);
+      console.log("Employee's manager updated!");
+      break;
+    case "View employees by manager":
+      const managerResponse = await inquirer.prompt([
+        { type: "input", name: "manager_id", message: "Enter manager ID:" },
+      ]);
+      console.table(await getEmployeesByManager(managerResponse.manager_id));
+      break;
+    case "Delete a department":
+      const deleteResponse = await inquirer.prompt([
+        { type: "input", name: "department_id", message: "Enter department ID to delete:" },
+      ]);
+      await deleteDepartment(deleteResponse.department_id);
+      console.log("Department deleted!");
+      break;
     case "Exit":
       console.log("Goodbye!");
       process.exit();
