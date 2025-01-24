@@ -23,7 +23,9 @@ Following will be required in this project:
 -Using 'psql -U postgres' to create databases
 
 ## Credits
-Utilized Xpert Learning Assistant to resolve functionality issues
+-Utilized Xpert Learning Assistant to resolve functionality issues
+-Attended Tutor session to understand concepts
+-Supported by TA during post class hour
 
 ## License
 This project is licensed under MIT.
