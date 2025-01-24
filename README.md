@@ -31,3 +31,4 @@ Following will be required in this project:
 This project is licensed under MIT.
 
 ## Video
+https://drive.google.com/file/d/1wGnEIBcZ5CQzPJhFUy5DLpeXEgIaTAgz/view?usp=drive_link
