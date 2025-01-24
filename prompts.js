@@ -69,7 +69,8 @@ const mainMenu = async () => {
         { type: "input", name: "role_id", message: "Enter role ID:" },
         { type: "input", name: "manager_id", message: "Enter manager's ID (if any):" },
       ]);
-      const { first_name, last_name, role_id, manager_id } = employeeResponse;
+      let { first_name, last_name, role_id, manager_id } = employeeResponse
+      manager_id = manager_id.trim() === "" ? null :parseInt(manager_id, 10); 
       await addEmployee(first_name, last_name, role_id, manager_id);
       console.log("Employee added!");
       break;
