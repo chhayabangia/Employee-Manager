@@ -15,10 +15,12 @@ Following will be required in this project:
 
 -Cloning of repository
 -Navigating to the provided folder
--Installing pg packages, inquirer and postgradeSQL 
+-Installing pg packages, inquirer, dotenv and postgradeSQL 
 
 ## Usage
-'npm run start' can be used to run 'index.ts'
+-Using 'npm init -y' to create json file
+-Using 'npm install' to install packages
+-Using 'psql -U postgres' to create databases
 
 ## Credits
 Utilized Xpert Learning Assistant to resolve functionality issues
